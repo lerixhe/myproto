@@ -1,0 +1,21 @@
+syntax = "proto3";
+package prototext;
+
+message TestRequest{
+    // 姓名
+    string name = 1;
+    // 身高
+    int32 height= 2;
+    // 体重
+    repeated int32 weight = 3;
+    // 人生格言
+    string moto = 4;
+}
+
+message TestReponse{
+    // 错误号
+    int32 error=1;
+    // 错误信息
+    string ermessage = 2;
+
+}
